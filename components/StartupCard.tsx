@@ -2,9 +2,12 @@ import { EyeIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Author, Startup } from "@/sanity/types";
 import { formatDate } from "@/lib/utils";
 
-type StartupCardProps = { post: StartupCard };
+export type StartupTypeCard = Omit<Startup, "author"> & { author?: Author };
+
+type StartupCardProps = { post: StartupTypeCard };
 
 export const StartupCard = ({ post }: StartupCardProps) => {
   const {
