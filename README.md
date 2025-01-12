@@ -1,6 +1,6 @@
 # Next.js Blog Site
 
-This project is a practice blog site built with **Next.js**.
+This project is a practice of blog site built with **Next.js** based on JS Mastery.
 
 ## Features
 
